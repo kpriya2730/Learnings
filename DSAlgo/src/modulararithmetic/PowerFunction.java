@@ -6,6 +6,7 @@ package modulararithmetic;
  * a = 2, n=5, p=7 // 4
  * a=3, n=4, p=6 // 3
  * a = 10, n=40, p=8 //
+ * TC: O(N)
  */
 public class PowerFunction {
     /*
