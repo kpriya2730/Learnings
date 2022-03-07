@@ -10,7 +10,8 @@ Example:
 2. 40 % 7 = 40 - 35 = 5 
 
 For negative numbers,
-1. -40 % 7 = -40 - Largest multiple of divisor that is less than or equal to the Dividend = -40 - (-42) = 2
+1. -40 % 7 = -40 - Largest multiple of divisor that is 
+        less than or equal to the Dividend = -40 - (-42) = 2
 2. -60 % 9 = -60 - (-63) = 3
 3. -30 % 4 = -30 - (-32) = 2
 ```
@@ -39,7 +40,22 @@ How the mod operator behave with + and x operators?
     (6+8)%10 = (6%10 + 8%10)%10 = (6+8)%10 = 4
    ```
 2. **(a x b)%m = ((a%m) x (b%m))%m**
-
+3. Divisibility Rules:
+   ```
+   Rule for 3 = Sum of digits has to be divisible by 3
+   How did we get this rule??
+   4372%3 = (4+3+7+2)%3
+   4372 = 4*10^3+3*10^2+7*10+2
+   4372%3
+   => (4*10^3+3*10^2+7*10+2)%3
+   => ((4*10^3)%3+(3*10^2)%3+(7*10)%3+2%3)%3
+   => ((4%3*10^3%3)%3+(3%3*10^2%3)%3+(7%3*10%3)%3+2%3)
+   Note: 10%3 = 1, 100%3=1,.., 10^n%3=1
+   => ((4%3)%3+(3%3)%3+(7%3)%3+2%3)
+   Note: (a%b)%b = a%b
+   => (4%3+3%3+7%3+2%3)%3
+   => (4+3+7+2)%3
+   ```
 
 
 
